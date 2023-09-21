@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main_container {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+  width: auto;
+  background-color: #242424;
+  padding: 20px;
+}
+.search_result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 650px;
+  width: 100%;
+  font-size: 40px;
+  font-family: Poppins;
+  font-weight: 500;
+  color: gray;
+  letter-spacing: 20px;
+  gap: 20px;
+}
+.search_result Button {
+  background-color: #000000;
+  border-radius: 0px;
+}
+.heading_container {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 50px;
+  gap: 5px;
+}
+.heading {
+  width: 50%;
+  color: #ffffff;
+  font-family: Dela Gothic One;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 60px;
+  letter-spacing: 1px;
+}
+.paragraph {
+  width: 50%;
+  color: #ffffff;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+}
+.data_container {
+  display: grid;
+  place-items: center;
+  height: auto;
+  width: 100%;
+  grid-template-columns: repeat(5, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+.cardContain img {
+  width: 200px;
+  height: auto;
+}
+.tital_container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  background-color: #131313;
+  padding: 8px;
+  margin-top: -7px;
+  gap: 10px;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+}
+.bookmark-icon{
+  cursor: pointer;
+}
+.year_and_rettings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+}
+.rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  background-color: #ffc107;
+  border-radius: 5px;
+  color: #263238;
+  height: 20px;
+  width: 30px;
+}
+.pagination_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: auto;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+.backButton Button{
+  background-color: #000000;
+  border-radius: 20px;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .heading_container {
+    margin-top: 30px;
+    padding: 0px;
+  }
+  .paragraph {
+    display: none;
+  }
+  .heading {
+    width: 100%;
+    font-size: 24px;
+    line-height: 25px;
+  }
+  .data_container {
+    grid-template-columns: repeat(2, minmax(140px, 1fr));
+    grid-gap: 10px;
+    padding-top: 10px;
+  }
+  .cardContain img {
+    width: 140px;
+    height: 180px;
+  }
+  .tital_container {
+    height: 60px;
+    width: auto;
+    gap: 5px;
+  }
+  .title {
+    font-size: 10px;
+  }
+  .year_and_rettings {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .heading_container {
+    margin-top: 40px;
+    padding: 0px;
+  }
+  .paragraph {
+    display: none;
+  }
+  .heading {
+    width: 100%;
+    font-size: 28px;
+    line-height: 35px;
+  }
+  .data_container {
+    grid-template-columns: repeat(3, minmax(140px, 1fr));
+    grid-gap: 10px;
+    padding-top: 10px;
+  }
+  .cardContain img {
+    width: 140px;
+    height: 180px;
+  }
+  .tital_container {
+    height: 60px;
+    width: auto;
+    gap: 5px;
+  }
+  .title {
+    font-size: 10px;
+  }
+  .year_and_rettings {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .heading {
+    font-size: 28px;
+  }
+  .paragraph {
+    font-size: 12px;
+  }
+  .data_container {
+    grid-template-columns: repeat(4, minmax(160px, 1fr));
+    grid-gap: 10px;
+  }
+  .cardContain img {
+    width: 170px;
+    height: 200px;
+  }
+  .title {
+    font-size: 14px;
+  }
+  .year_and_rettings {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .data_container {
+    grid-template-columns: repeat(5, minmax(180px, 1fr));
+    grid-gap: 10px;
+  }
+  .cardContain img {
+    width: 180px;
+    height: auto;
+  }
+  .title {
+    font-size: 14px;
+  }
+}
